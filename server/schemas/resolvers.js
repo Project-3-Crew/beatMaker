@@ -27,17 +27,22 @@ const resolvers = {
     },
   },
   Mutation: {
-    createMatchup: async (parent, args) => {
-      const matchup = await Matchup.create(args);
-      return matchup;
-    },
-    createVote: async (parent, { _id, techNum }) => {
-      const vote = await Matchup.findOneAndUpdate(
-        { _id },
-        { $inc: { [`tech${techNum}_votes`]: 1 } },
-        { new: true }
-      );
-      return vote;
+    // createMatchup: async (parent, args) => {
+    //   const matchup = await Matchup.create(args);
+    //   return matchup;
+    // },
+    // createVote: async (parent, { _id, techNum }) => {
+    //   const vote = await Matchup.findOneAndUpdate(
+    //     { _id },
+    //     { $inc: { [`tech${techNum}_votes`]: 1 } },
+    //     { new: true }
+    //   );
+    //   return vote;
+    // },
+    addUser: async (parent, { name, email, password }) => {
+      const user = await User.create({ name, email, password });
+      const token = signToken(user);
+      return { token, user };
     },
   },
 };
