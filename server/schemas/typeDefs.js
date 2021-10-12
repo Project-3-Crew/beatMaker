@@ -14,6 +14,13 @@ const typeDefs = gql`
     tech2_votes: Int
   }
 
+  type User {
+    _id: ID!
+    name: String!
+    email: String!
+    password: String!
+  }
+
   type Query {
     tech: [Tech]
     matchups(_id: String): [Matchup]
