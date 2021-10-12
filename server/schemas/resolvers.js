@@ -1,17 +1,29 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { Tech, Matchup } = require('../models');
+// const { Tech, Matchup } = require('../models');
 const { User } = require('../models');
 const { signToken } = require('../utils/auth');
 
 
 const resolvers = {
   Query: {
-    tech: async () => {
-      return Tech.find({});
+    // tech: async () => {
+    //   return Tech.find({});
+    // },
+    // matchups: async (parent, { _id }) => {
+    //   const params = _id ? { _id } : {};
+    //   return Matchup.find(params);
+    // },
+    users: async () => {
+      return User.find().populate('beats');
     },
-    matchups: async (parent, { _id }) => {
-      const params = _id ? { _id } : {};
-      return Matchup.find(params);
+    user: async (parent, { name }) => {
+      return User.findOne({ name }).populate('beats');
+    },
+    me: async (parent, args, context) => {
+      if (context.user) {
+        return User.findOne({ _id: context.user._id }).populate('beats');
+      }
+      throw new AuthenticationError('You need to be logged in!');
     },
   },
   Mutation: {
