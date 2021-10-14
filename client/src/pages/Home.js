@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from 'antd';
 import { useQuery } from '@apollo/client';
 
 import ThoughtList from '../components/ThoughtList';
@@ -16,7 +17,7 @@ const Home = () => {
         <div
           className="col-12 col-md-10 mb-3 p-3"
           style={{ border: '1px dotted #1a1a1a' }}
-        >
+        > <Button type="primary">Button</Button>
           <ThoughtForm />
         </div>
         <div className="col-12 col-md-8 mb-3">
