@@ -15,8 +15,9 @@ import SingleThought from './pages/SingleThought';
 import Profile from './pages/Profile';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import BeatPage from './components/BeatPage'
 
-// Construct our main GraphQL API endpoint
+
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
@@ -65,12 +66,19 @@ function App() {
             <Route exact path="/thoughts/:thoughtId">
               <SingleThought />
             </Route>
+            <Route exact path="/BeatPage">
+              <BeatPage />
+            </Route>
           </div>
           <Footer />
         </div>
       </Router>
     </ApolloProvider>
   );
-}
+   
+  }
+ 
+
+
 
 export default App;
