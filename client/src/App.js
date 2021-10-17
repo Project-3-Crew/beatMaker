@@ -15,7 +15,7 @@ import SingleThought from './pages/SingleThought';
 import Profile from './pages/Profile';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import BeatPage from './components/BeatPage'
+import Sounds from './pages/Sounds'
 
 
 const httpLink = createHttpLink({
@@ -66,8 +66,8 @@ function App() {
             <Route exact path="/thoughts/:thoughtId">
               <SingleThought />
             </Route>
-            <Route exact path="/BeatPage">
-              <BeatPage />
+            <Route exact path="/Sounds">
+              < Sounds />
             </Route>
           </div>
           <Footer />
