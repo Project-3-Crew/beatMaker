@@ -67,4 +67,19 @@ export const ADD_COMMENT = gql`
       }
     }
   }
+  `;
+export const ADD_BEAT_COMMENT = gql`
+  mutation addBeatComment($beatId: ID!, $commentText: String!) {
+    addComment(beatId: $beatId, commentText: $commentText) {
+      _id
+      BeatText
+      beatAuthor
+      createdAt
+      comments {
+        _id
+        commentText
+        createdAt
+      }
+    }
+  }
 `;
