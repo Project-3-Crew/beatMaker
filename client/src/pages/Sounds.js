@@ -1,4 +1,5 @@
-import React from "react";
+import SoundButton from "../components/SoundButton"
+// import React from "react";
 // import audio1 from "https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3";
 // import audio2 from "https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3";
 // import audio3 from "https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3";
@@ -17,6 +18,7 @@ function Sounds() {
   return (
     <div>
       <button onClick={start}>Heat-1</button>
+      <SoundButton></SoundButton>
     </div>
   )
 }      
@@ -28,7 +30,7 @@ function Sounds() {
     // onclick to play on button
     // trigger button press on key press
     // onClick multi
-    // write map function to dynamically render each beat sound
+    
 
    
       
