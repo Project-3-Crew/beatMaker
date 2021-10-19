@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button } from 'antd';
 import { useQuery } from '@apollo/client';
 
 import ThoughtList from '../components/ThoughtList';
@@ -26,7 +25,7 @@ const Home = () => {
           ) : (
             <ThoughtList
               thoughts={thoughts}
-              title="Some Feed for Thought(s)..."
+              title="List of beats"
             />
           )}
         </div>
