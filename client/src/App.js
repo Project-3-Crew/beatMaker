@@ -18,6 +18,8 @@ import SingleThought from './pages/SingleThought';
 import Profile from './pages/Profile';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Sounds from './pages/Sounds'
+
 
 
 // Construct our main GraphQL API endpoint
@@ -69,12 +71,19 @@ function App() {
             <Route exact path="/thoughts/:thoughtId">
               <SingleThought />
             </Route>
+            <Route exact path="/Sounds">
+              < Sounds />
+            </Route>
           </div>
           <Footer />
         </div>
       </Router>
     </ApolloProvider>
   );
-}
+   
+  }
+ 
+
+
 
 export default App;
