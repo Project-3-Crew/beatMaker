@@ -42,6 +42,33 @@ export const QUERY_SINGLE_THOUGHT = gql`
     }
   }
 `;
+export const QUERY_BEATS = gql`
+  query getbeats {
+    beats {
+      _id
+      beatText
+      beatAuthor
+      createdAt
+    }
+  }
+`;
+
+export const QUERY_SINGLE_BEAT = gql`
+  query getSingleBeat($beatId: ID!) {
+    beat(beatId: $beatId) {
+      _id
+      beatText
+      beatAuthor
+      createdAt
+      comments {
+        _id
+        commentText
+        commentAuthor
+        createdAt
+      }
+    }
+  }
+`;
 
 export const QUERY_ME = gql`
   query me {
@@ -49,6 +76,12 @@ export const QUERY_ME = gql`
       _id
       username
       email
+      beats {
+        _id
+        beatText
+        beatAuthor
+        createdAt
+      }
       thoughts {
         _id
         thoughtText
