@@ -11,14 +11,17 @@ import SoundButton from "../components/SoundButton"
 
 
 function Sounds() {
-  let audio = new Audio('https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3')
-  const start = () => {
-    audio.play()
-  }
+  
   return (
     <div>
-      <button onClick={start}>Heat-1</button>
-      <SoundButton></SoundButton>
+      <SoundButton url='https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3'>Heat-1</SoundButton>
+      <SoundButton url="https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3">Heat-2</SoundButton>
+      <SoundButton url="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3">Heat-3</SoundButton>
+      <SoundButton url="https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3">Heat-4</SoundButton>
+      <SoundButton url="https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3">Heat-5</SoundButton>
+      <SoundButton url="https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3">Heat-6</SoundButton>
+      <SoundButton url="https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3">Heat-7</SoundButton>
+    
     </div>
   )
 }      

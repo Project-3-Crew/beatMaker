@@ -21,11 +21,8 @@ import Footer from './components/Footer';
 import Sounds from './pages/Sounds'
 
 
-<<<<<<< HEAD
-=======
 
 // Construct our main GraphQL API endpoint
->>>>>>> 58afaf6055a7b5fa591e9a0d38a8bddcfb8f9322
 const httpLink = createHttpLink({
   uri: '/graphql',
 });

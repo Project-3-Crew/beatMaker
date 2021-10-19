@@ -3,11 +3,11 @@
 function SoundButton(props) {
 
   let audio = new Audio(
-    "https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"
+    props.url
   );
   const start = () => {
     audio.play();
   };
-  return <button onClick={start}>Heat-1</button>;
+  return <button onClick={start}>{props.children}</button>;
 }
 export default SoundButton;
