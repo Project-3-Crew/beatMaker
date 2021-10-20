@@ -15,11 +15,9 @@ const Header = () => {
       <div className="container flex-row justify-space-between-lg justify-center align-center">
         <div>
           <Link className="text-light" to="/">
-
-            <h1 className="m-0">BeatMaker</h1>
+            <h1 className="m-0">Beat Maker</h1>
           </Link>
-          <p className="m-0">Press the play button to start making your beats!</p>
-          
+          <p className="m-0">Make Beats Not War!</p>
         </div>
         <div>
           {Auth.loggedIn() ? (
