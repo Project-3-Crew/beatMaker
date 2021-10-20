@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Auth from '../../utils/auth';
-
+import { BsFillMusicPlayer } from "react-icons/bs" 
 
 const Header = () => {
   const logout = (event) => {
@@ -15,7 +15,8 @@ const Header = () => {
       <div className="container flex-row justify-space-between-lg justify-center align-center">
         <div>
           <Link className="text-light" to="/">
-            <h1 className="m-0">Beat Maker</h1>
+            <h1 className="m-0 music-icon"><BsFillMusicPlayer></BsFillMusicPlayer>Beat Maker</h1>
+            
           </Link>
           <p className="m-0">Make Beats Not War!</p>
         </div>
