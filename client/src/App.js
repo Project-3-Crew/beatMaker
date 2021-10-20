@@ -1,4 +1,7 @@
 import React from 'react';
+// import { Button } from 'antd';
+import './App.css';
+
 import {
   ApolloClient,
   InMemoryCache,
@@ -15,6 +18,8 @@ import SingleThought from './pages/SingleThought';
 import Profile from './pages/Profile';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Sounds from './pages/Sounds'
+import BeatBlogs from './pages/BeatBlogs';
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
@@ -65,12 +70,22 @@ function App() {
             <Route exact path="/thoughts/:thoughtId">
               <SingleThought />
             </Route>
+            <Route exact path="/Sounds">
+              < Sounds />
+            </Route>
+            <Route exact path="/BeatBlogs">
+              < BeatBlogs />
+            </Route>
           </div>
           <Footer />
         </div>
       </Router>
     </ApolloProvider>
   );
-}
+   
+  }
+ 
+
+
 
 export default App;
