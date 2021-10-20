@@ -2,13 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const ThoughtList = ({
+  handleRemoveThought,
   thoughts,
   title,
   showTitle = true,
   showUsername = true,
 }) => {
   if (!thoughts.length) {
-    return <h3>No Thoughts Yet</h3>;
+    return <h3>No Comments</h3>;
   }
 
   return (
@@ -25,13 +26,13 @@ const ThoughtList = ({
                 >
                   {thought.thoughtAuthor} <br />
                   <span style={{ fontSize: '1rem' }}>
-                    had this thought on {thought.createdAt}
+                    commented on {thought.createdAt}
                   </span>
                 </Link>
               ) : (
                 <>
                   <span style={{ fontSize: '1rem' }}>
-                    You had this thought on {thought.createdAt}
+                    You commented on {thought.createdAt}
                   </span>
                 </>
               )}
@@ -43,8 +44,9 @@ const ThoughtList = ({
               className="btn btn-primary btn-block btn-squared"
               to={`/thoughts/${thought._id}`}
             >
-              Join the discussion on this thought.
+              Let your voice be heard.
             </Link>
+            <button className="btn btn-primary btn-block btn-squared">Delete</button>
           </div>
         ))}
     </div>
