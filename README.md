@@ -1,6 +1,4 @@
 # beatMaker
-# Shelf-Life  ![alt text](https://img.shields.io/badge/Food-Is%20Life-yellow)
-
 
 ## Description
 
@@ -13,14 +11,16 @@
 https://shelf-life-206.herokuapp.com/
 
 ## Credits
-
-[William Crownover](https://github.com/WilliamCrownover)   
-
+  
 [Jose Diaz](https://github.com/hotsoup42)    
 
 [Jeff Lynch](https://github.com/kingami34)
 
+[Sam Preston](https://github.com/spreston4)
 
+[Kayla Morris](https://github.com/KaylaMorris11)
+
+[Khanh Truong](https://github.com/leeyoungk)
 
 ## Table of Contents 
 - [Title](#Title)
@@ -29,7 +29,7 @@ https://shelf-life-206.herokuapp.com/
 
 - [Credits](#Credits)
 
-- [Installation](#installation)
+- [User Story](#UserStory)
 
 - [Demo](#Demo)
 
@@ -37,7 +37,7 @@ https://shelf-life-206.herokuapp.com/
 
 - [Features](#Features)
 
-## Installation
+## User Story
 >The first thing you need to do is to go into VScode and create a folders/files project. 
 
 >Then install npm inquirer, MySql2, Express, connect-session-sequelize, bcrypt, express-handlebars, dotenv, sequelize and luxon.
@@ -46,13 +46,13 @@ https://shelf-life-206.herokuapp.com/
 
 ## Demo
 
-  <img src="./public/assets/shelflifevideo.gif" width="1200" alt="Animated gif demonstration of web app"/>
+  
 
 
 ## License
 
  ![MIT](https://img.shields.io/badge/license-MIT-brightgreen)
---- web app hosted on Heroku that helps shoppers keep track of their groceries expiration dates.
+--- web app hosted on Heroku that helps users to pick beats they would like to play.
 
 
 ## Features
