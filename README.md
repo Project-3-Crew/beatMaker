@@ -1,14 +1,16 @@
-# beatMaker
+# BeatMaker
 
 ## Description
 
-- The objective of this app is to give the user a more effective way of tracking the food items they buy.
-- This project was developed to help user's know which food items are about expire.
-- Having this App technology will benefit the user saving them time and money.
+
+
 
 ## Live Site
 
-https://shelf-life-206.herokuapp.com/
+https://git.heroku.com/beatmaker206.git
+
+
+
 
 ## Credits
   
@@ -35,14 +37,9 @@ https://shelf-life-206.herokuapp.com/
 
 - [License](#license)
 
-- [Features](#Features)
+- [Technologies](#Technologies)
 
 ## User Story
->The first thing you need to do is to go into VScode and create a folders/files project. 
-
->Then install npm inquirer, MySql2, Express, connect-session-sequelize, bcrypt, express-handlebars, dotenv, sequelize and luxon.
-
->Then your dependencies will be added to package.json, & package-lock.json
 
 ## Demo
 
@@ -55,9 +52,13 @@ https://shelf-life-206.herokuapp.com/
 --- web app hosted on Heroku that helps users to pick beats they would like to play.
 
 
-## Features
-> Storing food item list
 
-> Adding expiration dates to food items
+## Technologies
+- Apollo Server
+- Apollo Provider
+- GraphQL
+- JWT
+- Bootstrap
 
-> Future features coming soon
+
+
