@@ -13,7 +13,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bcrypt": "^4.0.1",
   "devDependencies": {
     "concurrently": "^5.1.0"
   },
