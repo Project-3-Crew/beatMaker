@@ -1,7 +1,13 @@
 {
     "cSpell.ignoreWords": [
         "Removethoughts",
+        "antd",
+        "browserslist",
+        "dlyyn",
+        "kingami",
         "larr",
-        "maxlength"
-    ]
+        "maxlength",
+        "mern"
+    ],
+    "git.ignoreLimitWarning": true
 }
