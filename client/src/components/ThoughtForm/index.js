@@ -6,6 +6,7 @@ import { ADD_THOUGHT } from '../../utils/mutations';
 import { QUERY_THOUGHTS, QUERY_ME } from '../../utils/queries';
 
 import Auth from '../../utils/auth';
+import "../styles/ThoughtForm.css"
 
 const ThoughtForm = () => {
   const [thoughtText, setThoughtText] = useState('');
@@ -62,6 +63,7 @@ const ThoughtForm = () => {
 
   return (
     <div>
+      <h3>Let's talk about Beat Making!</h3>
 
       {Auth.loggedIn() ? (
         <>
@@ -73,7 +75,7 @@ const ThoughtForm = () => {
             Character Count: {characterCount}/280
           </p>
           <form
-            className="flex-row justify-center justify-space-between-md align-center"
+            className="flex-row justify-center  align-center"
             onSubmit={handleFormSubmit}
           >
             <div className="col-12 col-lg-9">
@@ -89,7 +91,7 @@ const ThoughtForm = () => {
 
             <div className="col-12 col-lg-3">
               <button className="btn btn-primary btn-block py-3" type="submit">
-                Add Thought
+                Add Comment
               </button>
             </div>
             {error && (
@@ -101,7 +103,7 @@ const ThoughtForm = () => {
         </>
       ) : (
         <p>
-          You need to be logged in to make your beats. Please{' '}
+          You need to be logged in to create a Beat! Please{' '}
           <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
         </p>
       )}

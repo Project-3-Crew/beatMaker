@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+
 import { useMutation } from '@apollo/client';
 
 import { ADD_COMMENT } from '../../utils/mutations';
@@ -41,6 +41,7 @@ const CommentForm = ({ thoughtId }) => {
 
   return (
     <div>
+      <h4>What's on your mind?</h4>
 
       {Auth.loggedIn() ? (
         <>

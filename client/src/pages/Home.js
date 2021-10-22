@@ -1,34 +1,24 @@
 import React from 'react';
-import { useQuery } from '@apollo/client';
-
-import ThoughtList from '../components/ThoughtList';
-import ThoughtForm from '../components/ThoughtForm';
-
-import { QUERY_THOUGHTS } from '../utils/queries';
-
+import "../Home.css";
 
 const Home = () => {
-  const { loading, data } = useQuery(QUERY_THOUGHTS);
-  const thoughts = data?.thoughts || [];
+
 
   return (
-    <main>
-      <div className="flex-row justify-center">
-        <div
-          className="col-12 col-md-10 mb-3 p-3"
-          style={{ border: '1px dotted #1a1a1a' }}
-        >
-          <ThoughtForm />
-        </div>
-        <div className="col-12 col-md-8 mb-3">
-          {loading ? (
-            <div>Loading...</div>
-          ) : (
-            null
-          )}
-        </div>
-      </div>
-    </main>
+ 
+  
+<div className="welcome-container">
+  <div className="subContainer">
+         <h1>Welcome to the BeatMaker App!</h1>
+         <p>The BeatMaker App is a platform the user 
+           can come to and have some fun.
+         </p>
+         <ul>Features</ul>
+         <li>Login/Signup</li>
+         <li>Create Beat</li>
+         <li>Blog with friends</li>
+         </div>
+         </div>
   );
 };
 

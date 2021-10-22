@@ -1,0 +1,15 @@
+#root{
+margin-bottom:400px;
+}
+
+body {
+    background-image: url(./img/beat.png);
+    height: 100vh;
+    background-position: center; 
+  }
+
+  .homepage{
+    background-color: white;
+    height: 50vh;
+    margin-bottom: 300px;
+  }
