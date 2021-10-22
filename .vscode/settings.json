@@ -8,5 +8,6 @@
         "larr",
         "maxlength",
         "mern"
-    ]
+    ],
+    "git.ignoreLimitWarning": true
 }

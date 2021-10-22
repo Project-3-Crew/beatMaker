@@ -18,7 +18,7 @@ const ThoughtList = ({
       {thoughts &&
         thoughts.map((thought) => (
           <div key={thought._id} className="card mb-3">
-            <h4 className="card-header bg-primary text-light p-2 m-0">
+            <h4 className="card-header bg-secondary text-light p-2 m-0">
               {showUsername ? (
                 <Link
                   className="text-light"
@@ -41,12 +41,12 @@ const ThoughtList = ({
               <p>{thought.thoughtText}</p>
             </div>
             <Link
-              className="btn btn-primary btn-block btn-squared"
+              className="btn btn-secondary btn-block btn-squared"
               to={`/thoughts/${thought._id}`}
             >
               Let your voice be heard.
             </Link>
-            <button className="btn btn-primary btn-block btn-squared">Delete</button>
+            <button className="btn btn-secondary btn-block btn-squared">Delete</button>
           </div>
         ))}
     </div>

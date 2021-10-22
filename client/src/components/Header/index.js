@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import Auth from '../../utils/auth';
+// import {BsFillAlarmFill} from "react-icons/bs";
+import "../styles/Header.css";
+
 
 const Header = () => {
   const logout = (event) => {
@@ -9,13 +11,17 @@ const Header = () => {
     Auth.logout();
   };
   return (
-    <header className="bg-primary text-light mb-4 py-3 flex-row align-center">
+    
+    <header className="text-light mb-4 py-3 flex-row align-center">
+      <div> </div>
       <div className="container flex-row justify-space-between-lg justify-center align-center">
         <div>
           <Link className="text-light" to="/">
-            <h1 className="m-0">Beat Maker</h1>
+            <h1 className="m-0 music-icon">Beat Maker</h1>
+            
           </Link>
-          <p className="m-0">Make Beats Not War!</p>
+        
+          <p className="m-0 subhead">Make Beats, Not War!</p>
         </div>
         <div>
           {Auth.loggedIn() ? (
@@ -26,6 +32,7 @@ const Header = () => {
               <Link className="btn btn-lg btn-info m-2" to="/BeatBlogs">
                 BBlog
               </Link>
+              
               <button className="btn btn-lg btn-light m-2" onClick={logout}>
                 Logout
               </button>
@@ -43,6 +50,7 @@ const Header = () => {
         </div>
       </div>
     </header>
+    
   );
 };
 

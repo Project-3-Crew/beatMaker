@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-
 import { useMutation } from '@apollo/client';
 import { ADD_USER } from '../utils/mutations';
 
 import Auth from '../utils/auth';
+import "../signup.css";
 
 const Signup = () => {
   const [formState, setFormState] = useState({
@@ -53,7 +53,7 @@ const Signup = () => {
               <form onSubmit={handleFormSubmit}>
                 <input
                   className="form-input"
-                  placeholder="Your username"
+                  placeholder="Enter a Username"
                   name="username"
                   type="text"
                   value={formState.name}
@@ -61,7 +61,7 @@ const Signup = () => {
                 />
                 <input
                   className="form-input"
-                  placeholder="Your email"
+                  placeholder="Enter Your email"
                   name="email"
                   type="email"
                   value={formState.email}
