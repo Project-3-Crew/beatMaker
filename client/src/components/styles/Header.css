@@ -1,0 +1,22 @@
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    color: white;
+    font-size:50px;
+}
+
+
+.btn-lg{
+    background-color: black;
+    color: white;
+    border-color:black;
+    display: inline-block;
+    padding:5px;
+}
+.subhead{
+font-size: 25px;
+}
