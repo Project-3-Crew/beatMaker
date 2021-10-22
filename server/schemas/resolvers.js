@@ -1,5 +1,6 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User, Thought, Beat } = require('../models');
+const { User, Thought } = require('../models');
+const { findOneAndUpdate } = require('../models/Beat');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
@@ -18,13 +19,7 @@ const resolvers = {
     thought: async (parent, { thoughtId }) => {
       return Thought.findOne({ _id: thoughtId });
     },
-    beat: async (parent, {beatId}) => {
-      return Beat.findOne({_id: beatId});
-    },
-    beats: async (parent,{username})=> {
-      const params = username ? {username}:{};
-      return Beat.find(params).sort({createdAt:-1});
-    },
+   
     me: async (parent, args, context) => {
       if (context.user) {
         return User.findOne({ _id: context.user._id }).populate('thoughts');
@@ -56,21 +51,14 @@ const resolvers = {
 
       return { token, user };
     },
-    addBeat: async (parent, { beatText }, context) => {
-      if (context.user) {
-        const beat = await Beat.create({
-          beatText,
-          beatAuthor: context.user.username,
-        });
 
-        await User.findOneAndUpdate(
-          { _id: context.user._id },
-          { $addToSet: { beats: beat._id } }
-        );
-
-        return beat;
-      }
-      throw new AuthenticationError('You need to be logged in!');
+    addSound: async (parent, {soundKey}, context) => {
+     if(context.user){
+       await User.findOneAndUpdate(
+         {_id:context.user._id},
+         { $addToSet: { sounds: soundKey } }
+       )
+     }
     },
     addThought: async (parent, { thoughtText }, context) => {
       if (context.user) {
@@ -105,22 +93,7 @@ const resolvers = {
       }
       throw new AuthenticationError('You need to be logged in!');
     },
-    removeBeat: async (parent, { beatId }, context) => {
-      if (context.user) {
-        const beat = await Beat.findOneAndDelete({
-          _id: beatId,
-          beatAuthor: context.user.username,
-        });
-
-        await User.findOneAndUpdate(
-          { _id: context.user._id },
-          { $pull: { beats: beat._id } }
-        );
-
-        return beat;
-      }
-      throw new AuthenticationError('You need to be logged in!');
-    },
+    
     removeThought: async (parent, { thoughtId }, context) => {
       if (context.user) {
         const thought = await Thought.findOneAndDelete({

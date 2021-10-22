@@ -24,20 +24,11 @@ export const ADD_USER = gql`
   }
 `;
 
-export const ADD_BEAT = gql`
-  mutation addBeat($beatText: String!) {
-    addBeat(beatText: $beatText) {
-      _id
-      beatText
-      beatAuthor
-      createdAt 
-      comments {
-        _id
-        commentText
-      }
-    }
-  }
-`;
+export const ADD_SOUND = gql`
+mutation addSound($sounds:String! ) {
+  addSound(soundKey:$sounds)
+}`;
+
 export const ADD_THOUGHT = gql`
   mutation addThought($thoughtText: String!) {
     addThought(thoughtText: $thoughtText) {
