@@ -18,8 +18,6 @@ const Footer = () => {
         )}
 
   
-
-
         <h4>
           Made by The Project3Crew.
         </h4>
