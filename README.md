@@ -7,7 +7,7 @@
 
 ## Live Site
 
-https://git.heroku.com/beatmaker206.git
+https://beatmaker206.herokuapp.com/
 
 
 
