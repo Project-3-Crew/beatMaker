@@ -1,7 +1,7 @@
 # BeatMaker
 
 ## Description
-   Our pod 3 group created an app called Beat Maker. Beat Maker allows users experiment with different sound mashups and users can creat their desired beat or they can save the beats to their account and come back later to play with them. 
+   Our pod 3 group created an app called Beat Maker. Beat Maker allows users experiment with different sound mashups and users can create their desired beat or they can save the beats to their account and come back later to play with them. 
 
 
 ## Live Site
