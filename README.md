@@ -10,6 +10,10 @@ https://beatmaker206.herokuapp.com/
 
 ![Screen Shot 2021-10-22 at 1 40 05 PM](https://user-images.githubusercontent.com/78561316/138566029-c77b9a23-b11c-468b-9568-1428b8b7905b.png)
 
+## User Story
+
+ Do you love music? I guess the answer is absolutely YES right? Everyone loves music and that is what brought us to create an app called Beat Maker. It's a one-stop-shop for anyone loves music and wants to create their desired beat. Users can experiment with different sound combinations and mashups to find the right beat. According to limited time for the project, we were only able to create a simple app. However, looking forward in the future, we will look to make a completed app for everyone who loves music out there. 
+
 
 ## Table of Contents 
 - [Title](#Title)
@@ -23,12 +27,6 @@ https://beatmaker206.herokuapp.com/
 - [License](#license)
 
 - [Technologies](#Technologies)
-
-## User Story
-
- Do you love music? I guess the answer is absolutely YES right? Everyone loves music and that is what brought us to create an app called Beat Maker. It's a one-stop-shop for anyone loves music and wants to create their desired beat. Users can experiment with different sound combinations and mashups to find the right beat. According to limited time for the project, we were only able to create a simple app. However, looking forward in the future, we will look to make a completed app for everyone who loves music out there. 
-
-
 
   
 ## Credits
