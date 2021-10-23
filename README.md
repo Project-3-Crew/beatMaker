@@ -38,7 +38,7 @@ https://beatmaker206.herokuapp.com/
 - [Technologies](#Technologies)
 
 ## User Story
-  Do you love music ? i guess the answer  is absolutely YES right ?. Everyone love music and that bring us to create an app called Beat Maker. Its a one-stop-shop for anyone love music and want create their desired beat. Users can experiment  with different sound combinations and mashups to find the right beat. According to limited time for the project, we were only able to create a simple app . However, looking forward in the future, we will look to make a completed app for everyone love music out there. 
+  Do you love music ? I guess the answer  is absolutely YES right ? Everyone love music and that bring us to create an app called Beat Maker. Its a one-stop-shop for anyone love music and want create their desired beat. Users can experiment  with different sound combinations and mashups to find the right beat. According to limited time for the project, we were only able to create a simple app . However, looking forward in the future, we will look to make a completed app for everyone love music out there. 
 
 
   
