@@ -1,10 +1,13 @@
 const mongoose = require('mongoose');
 
-const mongoURI = "mongodb+srv://kingami34:Mastery28@cluster0.dlyyn.mongodb.net/myFirstDatabase?retryWrites=true";
-
-mongoose.connect(mongoURI, {
-useNewUrlParser: true,
-useUnifiedTopology: true,
-});
+mongoose.connect(
+  process.env.MONGODB_URI || 'mongodb://localhost/programming-thoughts',
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false,
+  }
+);
 
 module.exports = mongoose.connection;
