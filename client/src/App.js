@@ -1,11 +1,5 @@
 import React from 'react';
-<<<<<<< HEAD
-import { Button } from 'antd';
-import './App.css';
-
-=======
 import "./App.css";
->>>>>>> develop
 import {
   ApolloClient,
   InMemoryCache,
