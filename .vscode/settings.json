@@ -1,7 +1,15 @@
 {
     "cSpell.ignoreWords": [
+        "MicRecorder",
         "Removethoughts",
+        "antd",
+        "browserslist",
+        "dlyyn",
+        "kingami",
         "larr",
-        "maxlength"
-    ]
+        "maxlength",
+        "mern",
+        "preconnect"
+    ],
+    "git.ignoreLimitWarning": true
 }

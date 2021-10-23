@@ -1,4 +1,4 @@
-
+import "./styles/Sounds.css"
 
 function SoundButton(props) {
 
@@ -10,4 +10,5 @@ function SoundButton(props) {
   };
   return <button onClick={start}>{props.children}</button>;
 }
+
 export default SoundButton;

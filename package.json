@@ -17,6 +17,8 @@
     "concurrently": "^5.1.0"
   },
   "dependencies": {
+    "audio-react-recorder": "^1.0.4",
+    "mic-recorder-to-mp3": "^2.2.2",
     "use-sound": "^4.0.1"
   }
 }

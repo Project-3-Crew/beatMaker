@@ -1,7 +1,11 @@
 import React from 'react';
+<<<<<<< HEAD
 import { Button } from 'antd';
 import './App.css';
 
+=======
+import "./App.css";
+>>>>>>> develop
 import {
   ApolloClient,
   InMemoryCache,
@@ -10,7 +14,6 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-
 import Home from './pages/Home';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
@@ -49,12 +52,16 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
+    
       <Router>
-        <div className="flex-column justify-flex-start min-100-vh">
-          <Header />
+    
+          <Header/>
+          
           <div className="container">
+          
             <Route exact path="/">
               <Home />
+              
             </Route>
             <Route exact path="/login">
               <Login />
@@ -76,7 +83,7 @@ function App() {
             </Route>
           </div>
           <Footer />
-        </div>
+      
       </Router>
     </ApolloProvider>
   );

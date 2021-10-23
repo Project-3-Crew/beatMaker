@@ -6,6 +6,7 @@ import { ADD_THOUGHT } from '../../utils/mutations';
 import { QUERY_THOUGHTS, QUERY_ME } from '../../utils/queries';
 
 import Auth from '../../utils/auth';
+import "../styles/ThoughtForm.css"
 
 const ThoughtForm = () => {
   const [thoughtText, setThoughtText] = useState('');
@@ -44,7 +45,7 @@ const ThoughtForm = () => {
           thoughtAuthor: Auth.getProfile().data.username,
         },
       });
-
+      data()
       setThoughtText('');
     } catch (err) {
       console.error(err);
@@ -74,7 +75,7 @@ const ThoughtForm = () => {
             Character Count: {characterCount}/280
           </p>
           <form
-            className="flex-row justify-center justify-space-between-md align-center"
+            className="flex-row justify-center  align-center"
             onSubmit={handleFormSubmit}
           >
             <div className="col-12 col-lg-9">
