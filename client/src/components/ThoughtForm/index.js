@@ -45,7 +45,7 @@ const ThoughtForm = () => {
           thoughtAuthor: Auth.getProfile().data.username,
         },
       });
-
+      data()
       setThoughtText('');
     } catch (err) {
       console.error(err);

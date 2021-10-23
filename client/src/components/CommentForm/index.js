@@ -23,7 +23,7 @@ const CommentForm = ({ thoughtId }) => {
           commentAuthor: Auth.getProfile().data.username,
         },
       });
-
+data()
       setCommentText('');
     } catch (err) {
       console.error(err);
